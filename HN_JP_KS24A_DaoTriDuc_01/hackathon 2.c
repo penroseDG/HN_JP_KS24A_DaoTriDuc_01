@@ -69,11 +69,41 @@ int main(){
 				  printf("tong gia tri cac phan tu la : %d \n", sum );
 			    break ; 
     	 	case 5 : 
-			    break ; 
+			 if (n < 100) {
+                    printf("Nhap gia tri can them: ");
+                    scanf("%d", &x);
+                    arr[n] = x;
+                    n++;
+                } else {
+                    printf("Mang da day, khong the them phan tu.\n");
+                }
+                break;
     	 	case 6 : 
-			    break ; 
+			    printf("Nhap vi tri can xoa: ");
+                int delete;
+                scanf("%d", &delete);
+                if (delete >= 0 && delete < n) {
+                    for (int i = delete; i < n - 1; i++) {
+                        arr[i] = arr[i + 1];
+                    }
+                    n--;
+                    printf("Da xoa phan tu tai vi tri %d\n", delete);
+                } else {
+                    printf("Vi tri khong hop le.\n");
+                }
+                break;
     	 	case 7 : 
-			    break ; 
+			  for (int i = 0; i < n-1; i++) {
+                    for (int j = 0; j < n-i-1; j++) {
+                        if (arr[j] > arr[j+1]) {
+                            int temp = arr[j];
+                            arr[j] = arr[j+1];
+                            arr[j+1] = temp;
+                        }
+                    }
+                }
+                printf("Mang da duoc sap xep theo thu tu tang dan.\n");
+                break;
     	 	case 8 :  printf("Nhap phan tu can tim: ");
                 scanf("%d", &x);
                 int found = 0;
