@@ -38,30 +38,46 @@ int main(){
 				 }
     			break ;
 			case 3 :
+				//if(n > 0) {
+//				    int max , min = arr  [0];
+//					    for(int i = 0 ; i < n ; i ++ ){
+//					    	if ( arr[i]> max ){
+//					    		max= arr[i];
+//					    	}
+////							}else if ( arr[i] < min );
+////							{
+////								min = arr[i];
+////							}
+//						} 
+//						printf(" gia tri lon nhat cua mang : %d \n", max );
+////						printf(" gia tri nho nhat cua mang : %d \n", min );
+//
+//					} 
+////					if (n > 0){
+////					     int min = arr[0];
+////					     for(int i = 0 ; i < n ; i-- ){
+////					    	if ( arr[i] < min ){
+////					    		min= arr[i];								}
+////							} printf(" gia tri nho nhat cua mang : %d \n", min );
+////						}
+//					    break ; 
 //				   
-				    if(n > 0) {
-				    int max , min = arr  [0];
-					    for(int i = 0 ; i < n ; i ++ ){
-					    	if ( arr[i]> max ){
-					    		max= arr[i];
-					    	}
-//							}else if ( arr[i] < min );
-//							{
-//								min = arr[i];
-//							}
-						} 
-						printf(" gia tri lon nhat cua mang : %d \n", max );
-//						printf(" gia tri nho nhat cua mang : %d \n", min );
-
-					} 
-//					if (n > 0){
-//					     int min = arr[0];
-//					     for(int i = 0 ; i < n ; i-- ){
-//					    	if ( arr[i] < min ){
-//					    		min= arr[i];								}
-//							} printf(" gia tri nho nhat cua mang : %d \n", min );
-//						}
-					    break ; 
+				     if(n > 0) {
+                    int max = arr[0], min = arr[0];
+                    for(int i = 1; i < n; i++) {
+                        if (arr[i] > max) {
+                            max = arr[i];
+                        }
+                        if (arr[i] < min) {
+                            min = arr[i];
+                        }
+                    }
+                    printf("Gia tri lon nhat cua mang: %d \n", max);
+                    printf("Gia tri nho nhat cua mang: %d \n", min);
+                } else {
+                    printf("khong co gia tri .\n");
+                }
+                break;
     	 	case 4 : 
     	 	    for(int i = 0  ; i <= arr[i] ; i++){
     	 	    	 sum += arr[i]; 
