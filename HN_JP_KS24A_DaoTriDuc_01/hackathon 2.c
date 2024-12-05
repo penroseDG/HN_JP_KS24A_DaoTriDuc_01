@@ -81,7 +81,9 @@ int main(){
     	 	case 10 : 
 			    break ; 
     	 	case 11 : 
-			    break ;
+			return 0;
+            default:
+                printf("Lua chon khong hop le. Vui long chon lai.\n");
 		}
 	} while(choice !=12 ); 
 	printf (" moi ban nhap lai "); 
