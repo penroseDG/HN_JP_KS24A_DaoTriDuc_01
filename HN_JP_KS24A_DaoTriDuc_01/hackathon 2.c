@@ -2,7 +2,7 @@
 int main(){
 	int choice ; 
 	int arr[100]; 
-	int n ;
+	int n ,x ;
 	int sum ;  
 	
 	do{
