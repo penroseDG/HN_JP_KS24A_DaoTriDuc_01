@@ -74,8 +74,23 @@ int main(){
 			    break ; 
     	 	case 7 : 
 			    break ; 
-    	 	case 8 : 
-			    break ; 
+    	 	case 8 :  printf("Nhap phan tu can tim: ");
+                scanf("%d", &x);
+                int found = 0;
+                for (int i = 0; i < n; i++) {
+                {
+                        if (arr[i] == x){
+                            printf("Phan tu %d o vi tri a[%d]\n", x, i);
+                            found = 1;
+                            break;
+                        }
+                    }
+                    if (found) break;
+                }
+                if (!found) {
+                    printf("Khong tim thay phan tu %d\n", x);
+                }
+                break;
     	 	case 9 : 
 			    break ; 
     	 	case 10 : 
